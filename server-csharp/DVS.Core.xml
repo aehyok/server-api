@@ -1,0 +1,983 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.Core</name>
+    </assembly>
+    <members>
+        <member name="T:DVS.Core.Domains.Common.BasicArea">
+            <summary>
+            行政区域
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicArea.Name">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicArea.Pid">
+            <summary>
+            父级区域id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicArea.Level">
+            <summary>
+            层级
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicArea.Sequence">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Common.BasicCategory">
+            <summary>
+            类目信息
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicCategory.ParentId">
+            <summary>
+            上级类目id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicCategory.CategoryName">
+            <summary>
+            类目名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicCategory.CategoryDetail">
+            <summary>
+            类目详细描述
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicCategory.CategoryPicId">
+            <summary>
+            类目图片文件id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicCategory.CategoryPicUrl">
+            <summary>
+            类目图片相对地址
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicCategory.Sequence">
+            <summary>
+            排序
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicCategory.CreatedUserId">
+            <summary>
+            发布人id
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Common.BasicDepartment">
+            <summary>
+            部门
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDepartment.Name">
+            <summary>
+            部门名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDepartment.Pid">
+            <summary>
+            父级部门id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDepartment.Level">
+            <summary>
+            层级
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Common.BasicDictionary">
+            <summary>
+            字典表
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDictionary.Code">
+            <summary>
+            类型编码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDictionary.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDictionary.Sequence">
+            <summary>
+            顺序值，值越小越靠前
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDictionary.Description">
+            <summary>
+            描述
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDictionary.IconFileId">
+            <summary>
+            图标文件id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDictionary.IconFileUrl">
+            <summary>
+            iconFileUrl
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicDictionary.Status">
+            <summary>
+            status
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Common.BasicUser">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.Account">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.NickName">
+            <summary>
+            用户名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.Mobile">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.Email">
+            <summary>
+            电子邮箱
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.Address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.IsAuth">
+            <summary>
+            公众用户是否已认证
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.PopulationId">
+            <summary>
+            户籍人口表Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.Type">
+            <summary>
+            用户类型 公众1 村委2 政务3 企业4
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.AreaId">
+            <summary>
+            所属区域
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.DepartmentIds">
+            <summary>
+            所属部门
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.RoleIds">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.EnterpriseName">
+            <summary>
+            企业名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.BasicUser.Status">
+            <summary>
+            状态 1有效（启用），0无效（禁用）
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.OriginName">
+            <summary>
+            原始文件名
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.ByteSize">
+            <summary>
+            文件大小
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.RelativePath">
+            <summary>
+            文件访问的相对路径
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.ExtensionName">
+            <summary>
+            文件扩展名
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.FileType">
+            <summary>
+            文件类型，1图片，2视频，3压缩文件(zip,tar.gz……)，4文本文件（txt,pdf)
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.Md5">
+            <summary>
+            文件的Md5
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.ThumbnailId">
+            <summary>
+            缩略图对应的ID
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.Used">
+            <summary>
+            文件是否被使用
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Common.SunFileInfo.IsMaterial">
+            <summary>
+            素材文件，素材文件不受Used影响而被删除
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Cons.ConsInfoPublic">
+            <summary>
+            便民服务
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsInfoPublic.MessageName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsInfoPublic.MessageText">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsInfoPublic.Type">
+            <summary>
+            类型，1三务公开、2党建宣传、3精神文明、4便民服务
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsInfoPublic.Images">
+            <summary>
+            主题图片
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsInfoPublic.Status">
+            <summary>
+            1有效（启用），0无效（禁用）
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsInfoPublic.Viewcnt">
+            <summary>
+            浏览次数
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsInfoPublic.CreatedByDeptId">
+            <summary>
+            创建单位
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Cons.ConsPhotoAnywhere">
+            <summary>
+            随后拍实体表
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.UserId">
+            <summary>
+            微信用户ID
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.Type">
+            <summary>
+            类型 垃圾处理、环境污染、饮水问题、住房问题、治安问题、违规违纪、看病问题、教育问题、交通问题、其他
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.Descript">
+            <summary>
+            文字描述
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.ImageIds">
+            <summary>
+            图片ID逗号分隔
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.VideoIds">
+            <summary>
+            视频ID逗号分隔
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.IsReply">
+            <summary>
+            是否回复 1 待回复，2 已回复
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.ReplyDesc">
+            <summary>
+            回复文字
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.ReplyImageIds">
+            <summary>
+            回复图片ID逗号分隔
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.ReplyDateTime">
+            <summary>
+            回复时间
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.Replyer">
+            <summary>
+            回复人员
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsPhotoAnywhere.CreatedByDeptId">
+            <summary>
+            创建部门ID
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Cons.ConsProduceSale">
+            <summary>
+            产品销售实体表
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.ProductId">
+            <summary>
+            产品id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.Name">
+            <summary>
+            农产品名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.Number">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.Address">
+            <summary>
+            地址
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.ExpDate">
+            <summary>
+            截止日期
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.Publisher">
+            <summary>
+            发布人员
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.CreatedByDeptId">
+            <summary>
+            创建部门ID
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsProduceSale.Viewcnt">
+            <summary>
+            浏览次数
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Cons.ConsServiceChannel">
+            <summary>
+            便民渠道查询实体表
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceChannel.Title">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceChannel.Description">
+            <summary>
+            介绍
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceChannel.Remark">
+            <summary>
+            补充说明
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceChannel.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceChannel.Url">
+            <summary>
+            URL地址
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Cons.ConsServiceGuide">
+            <summary>
+            办事指南实体表
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceGuide.Title">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceGuide.Condition">
+            <summary>
+            受理条件
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceGuide.Material">
+            <summary>
+            准备材料
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceGuide.Description">
+            <summary>
+            办理信息
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceGuide.Step">
+            <summary>
+            办理流程
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceGuide.StepImages">
+            <summary>
+            办理流程图片ID逗号分隔
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceGuide.Icon">
+            <summary>
+            图标
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsServiceGuide.Url">
+            <summary>
+            URL
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsTypeMonthHandlePhotoAnywhere.Cnt">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Cons.ConsTypePhotoAnywhere.Cnt">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.VillageEpidemic">
+            <summary>
+            疫情防控管理
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.AreaId">
+            <summary>
+            行政代码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.HouseholdId">
+            <summary>
+            户码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.PopulationId">
+            <summary>
+            人口Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.SourceOrgCodes">
+            <summary>
+            来源地行政代码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.SourceAddress">
+            <summary>
+            来源地地详细地址
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.ReversalDate">
+            <summary>
+            反乡日期
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.RecorDate">
+            <summary>
+            登记日期
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.Temperature">
+            <summary>
+            体温
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.Health">
+            <summary>
+            异常情况，健康情况
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.IsFever">
+            <summary>
+            有无发热、乏力、咳嗽等症状 1 有 0 无
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.IsInAreas">
+            <summary>
+            疫区接触情况 1 有 0 无
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageEpidemic.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.VillageHouseholdCode">
+            <summary>
+            户码管理
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.AreaId">
+            <summary>
+            行政代码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.HouseName">
+            <summary>
+            门牌名
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.HouseNumber">
+            <summary>
+            门牌号
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.PeopleCount">
+            <summary>
+            户人数
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.ImageIds">
+            <summary>
+            住宅图片
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.ImageUrls">
+            <summary>
+            住宅图片
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.Tags">
+            <summary>
+            标签数组
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCode.Status">
+            <summary>
+            状态 1正常，0禁用
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCodeGrenTask.Status">
+            <summary>
+            0未生成，1已生成
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.VillageHouseholdCodeTag">
+            <summary>
+            户码标签
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCodeTag.HouseholdId">
+            <summary>
+            户码编号
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageHouseholdCodeTag.TagId">
+            <summary>
+            标签编号
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.VillageIncome">
+            <summary>
+            家庭手来源管理
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.AreaId">
+            <summary>
+            行政代码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.Product">
+            <summary>
+            农产品收入
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.HouseholdId">
+            <summary>
+            户码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.HouseRental">
+            <summary>
+            房屋出租收入
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.CollectiveDividend">
+            <summary>
+            集体分红收入
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.Distribution">
+            <summary>
+            经销收入
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.LandCirculation">
+            <summary>
+            土地流转收入
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.WorkIncome">
+            <summary>
+            务工收入
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.GovSubsidy">
+            <summary>
+            政府补贴
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.Other">
+            <summary>
+            其他收入
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageIncome.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.VillagePopulation">
+            <summary>
+            户籍人口管理
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.AreaId">
+            <summary>
+            行政代码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.HouseholdId">
+            <summary>
+            户码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.RealName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Sex">
+            <summary>
+            性别 1男，2女
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Nation">
+            <summary>
+            民族
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Birthday">
+            <summary>
+            出生年月日 1990-04-02
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Relationship">
+            <summary>
+            与户主关系
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.IdCard">
+            <summary>
+            身份证号码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Mobile">
+            <summary>
+            联系方式
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.RegisterOrgCodes">
+            <summary>
+            户籍地行政代码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.RegisterAddress">
+            <summary>
+            户籍地详细地址
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.LiveOrgCodes">
+            <summary>
+            现居住地行政代码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.LiveAddress">
+            <summary>
+            现居住地详细地址
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.NativePlaceOrgCodes">
+            <summary>
+            籍贯行政代码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Political">
+            <summary>
+            政治面貌
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Education">
+            <summary>
+            学历
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Marital">
+            <summary>
+            婚姻状态
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Religion">
+            <summary>
+            宗教
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Income">
+            <summary>
+            收入来源
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.HeadImageId">
+            <summary>
+            头像Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.HeadImageUrl">
+            <summary>
+            头像图片路径
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Tags">
+            <summary>
+            标签数组
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.Status">
+            <summary>
+            1 启用 0停用
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.DeleteReason">
+            <summary>
+            移除原因
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.tagNames">
+            <summary>
+            标签名称列表
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillagePopulation.PopulationType">
+            <summary>
+            人口类型
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.PopulationType">
+            <summary>
+            人口类型
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.PopulationGender">
+            <summary>
+            人口性别
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.VillageUserAuthRecord">
+            <summary>
+            村民认证记录表
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.Account">
+            <summary>
+            微信Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.PopulationId">
+            <summary>
+            人口Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.AreaId">
+            <summary>
+            行政区域Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.RealName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.IdCard">
+            <summary>
+            身份证号码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.Mobile">
+            <summary>
+            联系方式
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.Sex">
+            <summary>
+            性别 1男，2女
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.Birthday">
+            <summary>
+            出生年月日
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.ImageId">
+            <summary>
+            正面照Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.ImageUrls">
+            <summary>
+            图片路径
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.Remark">
+            <summary>
+            用户备注
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.AuditStatus">
+            <summary>
+            审核状态 0未申请， 1待审核，2审核通过，3审核失败
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.Auditor">
+            <summary>
+            审核人
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.AuditDateTime">
+            <summary>
+            审核时间
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageUserAuthRecord.AuditRemark">
+            <summary>
+            审核备注
+            </summary>
+        </member>
+        <member name="T:DVS.Core.Domains.Village.VillageWork">
+            <summary>
+            外出务工管理
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.AreaId">
+            <summary>
+            行政代码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.HouseholdId">
+            <summary>
+            户码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.WorkOrgCodes">
+            <summary>
+            工作所在地行政代码
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.WorkAddress">
+            <summary>
+            工作所在地详细地址
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.PopulationId">
+            <summary>
+            人口Id
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.Year">
+            <summary>
+            年度
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.Industry">
+            <summary>
+            行业
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.Occupation">
+            <summary>
+            职业
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.Salary">
+            <summary>
+            薪资范围
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.Company">
+            <summary>
+            工作单位
+            </summary>
+        </member>
+        <member name="P:DVS.Core.Domains.Village.VillageWork.Remark">
+            <summary>
+            备注
+            </summary>
+        </member>
+    </members>
+</doc>

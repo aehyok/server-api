@@ -1,0 +1,1167 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.GIS.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISCameraController">
+            <summary>
+            摄像头信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCameraController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISCameraService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCameraController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCameraController.AddAsync(DVS.Core.Domains.GIS.GISCamera)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCameraController.UpdateAsync(DVS.Core.Domains.GIS.GISCamera)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCameraController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCameraController.DeletetAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCameraController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入excel文件</param>
+            <param name="areaId">区域id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCameraController.ExportAsync(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController">
+            <summary>
+            公共设施信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISCollectivePropertyService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.AddAsync(DVS.Core.Domains.GIS.GISCollectiveProperty)">
+            <summary>
+            新增
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.UpdateAsync(DVS.Core.Domains.GIS.GISCollectiveProperty)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.UpdateBacthAsync(DVS.Models.Dtos.GIS.GISBatchDto)">
+            <summary>
+            批量修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.DeletetAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入excel文件</param>
+            <param name="areaId">区域id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCollectivePropertyController.ExportAsync(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISCustomController">
+            <summary>
+            自定义打点信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCustomController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISCustomService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCustomController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCustomController.AddAsync(DVS.Core.Domains.GIS.GISCustom)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCustomController.UpdateAsync(DVS.Core.Domains.GIS.GISCustom)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCustomController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCustomController.DeletetAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCustomController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入excel文件</param>
+            <param name="areaId">区域id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISCustomController.ExportAsync(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISFarmLandController">
+            <summary>
+            土地信息/规划用地
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISFarmLandService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.GetFarmListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取土地信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.GetPlanListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取规划用地列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.AddFarmAsync(DVS.Core.Domains.Village.VillageFarmland)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.UpdateFarmAsync(DVS.Core.Domains.Village.VillageFarmland)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.UpdateBacthAsync(DVS.Models.Dtos.GIS.GISBatchDto)">
+            <summary>
+            批量修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.AddPlanAsync(DVS.Core.Domains.Village.VillageFarmland)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.UpdatePlanAsync(DVS.Core.Domains.Village.VillageFarmland)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.UpdateBacthPlanAsync(DVS.Models.Dtos.GIS.GISBatchDto)">
+            <summary>
+            批量修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.GetFarmDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.GetPlanDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.DeletetFarmAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.DeletetPlanAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入excel文件</param>
+            <param name="areaId">区域id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.ImportPlanAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入excel文件</param>
+            <param name="areaId">区域id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.ExportAsync(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISFarmLandController.ExportPlanAsync(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISGreenHouseController">
+            <summary>
+            大棚打点信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.#ctor(DVS.Application.Services.GIS.IGISGreenHouseService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.AddAsync(DVS.Core.Domains.GIS.GISGreenHouse)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.UpdateAsync(DVS.Core.Domains.GIS.GISGreenHouse)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.UpdateBacthAsync(DVS.Models.Dtos.GIS.GISBatchDto)">
+            <summary>
+            批量修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.DeletetAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入excel文件</param>
+            <param name="areaId">区域id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISGreenHouseController.ExportAsync(System.Int32,System.String,System.Int32,System.String)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISHouseHoldController">
+            <summary>
+            户主信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISHouseHoldController.#ctor(DVS.Application.Services.GIS.IGISHouseHoldService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISHouseHoldController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISParkCameraController">
+            <summary>
+            园区摄像头信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCameraController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISCameraService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCameraController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCameraController.AddAsync(DVS.Core.Domains.GIS.GISCamera)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCameraController.UpdateAsync(DVS.Core.Domains.GIS.GISCamera)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCameraController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCameraController.DeletetAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCameraController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入文件名</param>
+            <param name="areaId">区域id</param>
+            <param name="parkId">园区id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCameraController.ExportAsync(System.Int32,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <param name="parkId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController">
+            <summary>
+            园区公共设施信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISCollectivePropertyService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.AddAsync(DVS.Core.Domains.GIS.GISCollectiveProperty)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.UpdateAsync(DVS.Core.Domains.GIS.GISCollectiveProperty)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.UpdateBacthAsync(DVS.Models.Dtos.GIS.GISBatchDto)">
+            <summary>
+            批量修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.DeletetAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入文件名</param>
+            <param name="areaId">区域id</param>
+            <param name="parkId">园区id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCollectivePropertyController.ExportAsync(System.Int32,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <param name="parkId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISParkCustomController">
+            <summary>
+            园区自定义打点信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCustomController.#ctor(DVS.Application.Services.GIS.IGISCustomService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCustomController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCustomController.AddAsync(DVS.Core.Domains.GIS.GISCustom)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCustomController.UpdateAsync(DVS.Core.Domains.GIS.GISCustom)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCustomController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCustomController.DeletetAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCustomController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入文件名</param>
+            <param name="areaId">区域id</param>
+            <param name="parkId">园区id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkCustomController.ExportAsync(System.Int32,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <param name="parkId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController">
+            <summary>
+            园区土地信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISFarmLandService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.GetListAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.AddAsync(DVS.Core.Domains.Village.VillageFarmland)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.UpdateAsync(DVS.Core.Domains.Village.VillageFarmland)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.GetDetailtAsync(DVS.Models.Dtos.GIS.Query.GISDetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.DeletetAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.ImportAsync(Microsoft.AspNetCore.Http.IFormFile,System.Int32,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="excelFile">导入excel文件</param>
+            <param name="areaId">区域id</param>
+            <param name="parkId">园区id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.ExportAsync(System.Int32,System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            导出
+            </summary>
+            <param name="typeId"></param>
+            <param name="keyword"></param>
+            <param name="ids"></param>
+            <param name="areaId"></param>
+            <param name="parkId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.GetUseFor">
+            <summary>
+            返回地块用途 1 普通用地 ,2 规划用地
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkFarmLandController.GetCategory">
+            <summary>
+            返回所属类型 1 区域 ,2 园区
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController">
+            <summary>
+            园区地理信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISPlotItemService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="plotitemService"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.ListFarmLandPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.ListCameraPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.ListPublicPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.ListCustomPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.AddFarmlandAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.UpdateFarmlandAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.AddCameraAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.UpdateCameraAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.AddPublicAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.UpdatePublicAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.AddCustomAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.UpdateCustomAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.GetFarmlandDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.GetCameraDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.GetPublicDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.GetCustomDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.DeletetFarmlandAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.DeletetCameraAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.DeletetPublicAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.DeletetCustomAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISParkPlotItemController.ListAreaPlotItemAppAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取区域打点详情列表
+            </summary>
+            <param name="model"></param>
+            
+            <returns></returns>
+        </member>
+        <member name="T:DVS.GIS.Api.Controllers.Console.GISPlotItemController">
+            <summary>
+            地理信息
+            </summary>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.#ctor(AutoMapper.IMapper,DVS.Application.Services.GIS.IGISPlotItemService)">
+            <summary>
+            地理信息
+            </summary>
+            <param name="mapper"></param>
+            <param name="plotitemService"></param>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListAreaPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListAreaPlotItemWeChatAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            微信公众号获取区域打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListHouseholdPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListHouseholdPlotItemWeChatAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            微信公众号获取户码打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListFarmlandPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListGreenhousePlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListCameraPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListPublicPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListCustomPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListPlanlandPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListPlotItemAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            获取打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.AddAreaAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.UpdateAreaAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.AddHouseholdAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.UpdateHouseholdAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.AddFarmlandAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.UpdateFarmlandAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.AddGreenhouseAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.UpdateGreenhouseAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.AddCameraAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.UpdateCameraAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.AddPublicAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.UpdatePublicAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.AddCustomAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.UpdateCustomAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.AddPlanAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            增加
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.UpdatePlanAsync(DVS.Core.Domains.GIS.GISPlotItem)">
+            <summary>
+            修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.GetAreaDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.GetHouseDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.GetFarmDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.GetGreenhouseDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.GetCameraDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.GetPublicDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.GetCustomDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.GetPlanlandDetailtAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.DeletetAreaAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.DeletetHousePlanlandAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.DeletetFarmlandAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.DeletetGreenhouseAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.DeletetCameraAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.DeletetPublicAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.DeletetCustomAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.DeletetPlanlandAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.GIS.Api.Controllers.Console.GISPlotItemController.ListAreaPlotItemAppAsync(DVS.Models.Dtos.GIS.Query.GISListQueryModel)">
+            <summary>
+            APP获取区域打点详情列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

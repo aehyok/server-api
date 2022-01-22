@@ -1,0 +1,20 @@
+[Unit]
+Description=dvs-village
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# modify when deploy in prod env
+User=dvs
+Group=dvs
+
+Type=simple
+ExecStart=/usr/local/dotnet-sdk/dotnet /usr/local/sunlight/dvs/dvs-village/DVS.Village.Api.dll
+WorkingDirectory=/usr/local/sunlight/dvs/dvs-village
+
+Restart=always
+RestartSec=1
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target

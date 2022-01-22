@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>./DVS.Common.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\service.proto" />
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="CSRedisCore" Version="3.6.6" />
+    <PackageReference Include="EPPlus" Version="5.7.0" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.39.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.39.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.40.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Lychee.Core" Version="1.0.8" />
+    <PackageReference Include="Lychee.EntityFramework" Version="1.0.10" />
+    <PackageReference Include="Lychee.EntityFramework.Extensions" Version="1.0.1" />
+    <PackageReference Include="Lychee.EntityFramework.MySql" Version="1.0.9" />
+    <PackageReference Include="Lychee.Extension.Cache.Abstractions" Version="1.0.0" />
+    <PackageReference Include="Lychee.Extension.Cache.EasyCaching" Version="1.0.0" />
+    <PackageReference Include="Lychee.Extensions" Version="1.0.1" />
+    <PackageReference Include="Lychee.TypeFinder" Version="1.0.0" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.8.10" />
+    <PackageReference Include="QRCoder" Version="1.4.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.1" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="StreamJsonRpc" Version="2.7.76" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.4" />
+    <PackageReference Include="Z.EntityFramework.Plus.EFCore" Version="3.1.37" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DVS.Models\DVS.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="cert\cloak_public.pem">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+</Project>

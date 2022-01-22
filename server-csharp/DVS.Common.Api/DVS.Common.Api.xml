@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.Common.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DVS.Common.Api.Controllers.HuaweiController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DVS.Common.Api.Controllers.HuaweiController.ScanIdCardAsync(DVS.Application.Services.Common.IHWService,Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            扫描
+            </summary>
+            <param name="service"></param>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Common.Api.Controllers.SLController">
+            <summary>
+            盛阳提供的公共服务
+            </summary>
+        </member>
+        <member name="M:DVS.Common.Api.Controllers.SLController.Encrypt(DVS.Models.Models.SSO.SOInfo)">
+            <summary>
+            加密
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Api.Controllers.SLController.Decrypt(DVS.Models.Models.SSO.SOInfo)">
+            <summary>
+            解密
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Api.Controllers.SLController.GetQueryToken(System.String,System.String)">
+            <summary>
+            取数据查询服务端的TOKEN
+            </summary>
+            <param name="userName">用户名</param>
+            <param name="code">CODE</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Api.Controllers.SLController.GetGuidelineDefine(System.String)">
+            <summary>
+            获取指标定义
+            </summary>
+            <param name="guideLineId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Api.Controllers.SLController.GetGuidelineData(DVS.Common.Guideline.QueryGuidelineModel)">
+            <summary>
+            取指标全部数据  
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Api.Controllers.SLController.GetGuidelineDataPaged(DVS.Common.Guideline.QueryGuidelinePageModel)">
+            <summary>
+            分页取指标数据
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

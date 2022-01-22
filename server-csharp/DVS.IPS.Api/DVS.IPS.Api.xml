@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.IPS.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DVS.IPS.Api.Controllers.App.IPSCompanyController">
+            <summary>
+            ips组织和门店
+            </summary>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSCompanyController.GetCompanyNodesTreeAsync">
+            <summary>
+            获取该商户所有子节点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.IPS.Api.Controllers.App.IPSDeviceController">
+            <summary>
+            ips设备
+            </summary>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSDeviceController.ListAsync">
+            <summary>
+            获取区域对应门店下的设备
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.IPS.Api.Controllers.App.IPSMessageController">
+            <summary>
+            滚动消息
+            </summary>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSMessageController.#ctor(DVS.Application.Services.IPS.IIPSMessageService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSMessageController.GetMessageListAsync(DVS.Models.Dtos.Common.PagedListQueryModel)">
+            <summary>
+            获取滚动消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSMessageController.GetMessageDetailAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            滚动消息详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSMessageController.DeleteMessageAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除滚动消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSMessageController.SaveMessageAsync(DVS.Core.Domains.IPS.IpsMessage)">
+            <summary>
+            保存滚动消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSMessageController.StatisticMessageAsync">
+            <summary>
+            统计滚动消息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.IPS.Api.Controllers.App.IPSScheduleController">
+            <summary>
+            日程安排
+            </summary>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSScheduleController.GetScheduleAsync(DVS.Models.Dtos.Common.PagedListQueryModel)">
+            <summary>
+            获取日程列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSScheduleController.GetDetailScheduleAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            日程详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSScheduleController.DeleteScheduleAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除日程
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSScheduleController.SaveScheduleAsync(DVS.Core.Domains.IPS.IpsSchedule)">
+            <summary>
+            保存日程
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.IPS.Api.Controllers.App.IPSScheduleController.StatisticScheduleAsync">
+            <summary>
+            统计日程
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

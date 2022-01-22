@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.SunFSAgent.Api</name>
+    </assembly>
+    <members>
+        <member name="M:DVS.SunFSAgent.Api.Controllers.FileUploadController.Upload(DVS.Application.Services.SunFSAgent.ISunFileUploadService,System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile})">
+            <summary>
+            上传文件
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

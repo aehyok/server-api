@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>./DVS.Core.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Dtos\**" />
+    <Compile Remove="Mapping\Serivce\**" />
+    <EmbeddedResource Remove="Dtos\**" />
+    <EmbeddedResource Remove="Mapping\Serivce\**" />
+    <EntityDeploy Remove="Dtos\**" />
+    <None Remove="Dtos\**" />
+    <None Remove="Mapping\Serivce\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Cronos" Version="0.7.0" />
+    <PackageReference Include="LinqKit" Version="1.1.24" />
+    <PackageReference Include="Lychee.Core" Version="1.0.8" />
+    <PackageReference Include="Lychee.EntityFramework" Version="1.0.10" />
+    <PackageReference Include="Lychee.EntityFramework.Extensions" Version="1.0.1" />
+    <PackageReference Include="Lychee.EntityFramework.MySql" Version="1.0.9" />
+    <PackageReference Include="Lychee.Extension.Cache.Abstractions" Version="1.0.0" />
+    <PackageReference Include="Lychee.Extension.Cache.EasyCaching" Version="1.0.0" />
+    <PackageReference Include="Lychee.Extensions" Version="1.0.1" />
+    <PackageReference Include="Lychee.TypeFinder" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DVS.Common\DVS.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DVS.Core.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,35 @@
+syntax = "proto3";
+package service;
+
+
+option csharp_namespace = "DVS.Application.Services.Grpc";
+
+message Request {
+          string parameters = 1;
+}
+
+message Reply {
+          string data = 1;
+}
+ 
+service HouseholdApi{
+	rpc GetHouseholdInfo(Request) returns (Reply);
+	rpc GetHouseholdMembers(Request) returns (Reply);
+	rpc GetHouseholdList(Request) returns (Reply);
+}
+
+service ServiceChannelApi{
+	rpc GetServiceChannelList(Request) returns (Reply);
+	rpc ServiceChannelAdd(Request) returns (Reply);
+	rpc ServiceChannelEdit(Request) returns (Reply);
+	rpc ServiceChannelRemove(Request) returns (Reply);
+	rpc ServiceChannelDetail(Request) returns (Reply);
+}
+
+service ServiceGuideApi {
+	rpc GetServiceGuideList(Request) returns (Reply);
+	rpc ServiceGuideAdd(Request) returns (Reply);
+	rpc ServiceGuideEdit(Request) returns (Reply);
+	rpc ServiceGuideRemove(Request) returns (Reply);
+	rpc ServiceGuideDetail(Request) returns (Reply);
+}

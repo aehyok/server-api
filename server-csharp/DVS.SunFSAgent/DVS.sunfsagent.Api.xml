@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.SunFSAgent.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DVS.SunFSAgent.Api.Controllers.FileUploadController">
+            <summary>
+            文件上传
+            </summary>
+        </member>
+        <member name="M:DVS.SunFSAgent.Api.Controllers.FileUploadController.Upload(DVS.Application.Services.SunFSAgent.IFileService,System.Collections.Generic.List{Microsoft.AspNetCore.Http.IFormFile},System.Boolean,System.String)">
+            <summary>
+            上传文件
+            </summary>
+            <param name="files"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.SunFSAgent.Api.Controllers.FileUploadController.TransformCompletedAsync(DVS.Application.Services.SunFSAgent.IFileService,DVS.Models.Dtos.Common.TransformCompletedInfo)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+            <param name="completedInfo"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

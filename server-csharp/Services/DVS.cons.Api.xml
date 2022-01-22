@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.Cons.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DVS.Cons.Api.Controllers.App.InfoPublicController">
+            <summary>
+            公开消息
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.InfoPublicController.GetList(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="type"></param>
+            <param name="keyword"></param>
+            <param name="startdate"></param>
+            <param name="enddate"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.InfoPublicController.DetailPublic(System.Int32)">
+            <summary>
+            详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Console.InfoPublicController">
+            <summary>
+            公开消息
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.GetList(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="type"></param>
+            <param name="keyword"></param>
+            <param name="startdate"></param>
+            <param name="enddate"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DeleteConsInfoPublic(System.Int32)">
+            <summary>
+            删除公开消息
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.SaveInfoPublic(DVS.Core.Domains.Cons.ConsInfoPublic)">
+            <summary>
+            保存
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DetailPublic(System.Int32)">
+            <summary>
+            详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Console.ProduceSaleController">
+            <summary>
+            农产品销售
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.#ctor(AutoMapper.IMapper,DVS.Application.Services.Cons.IProduceSaleService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.GetList(DVS.Model.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.Save(DVS.Models.Dtos.Cons.CreateProduceSaleModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.GetDetail(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.GetList(DVS.Model.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.Save(DVS.Model.Dtos.Cons.CreateServiceChannelModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.GetDetail(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.GetList(DVS.Model.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.Save(DVS.Model.Dtos.Cons.CreateServiceGuideModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.GetDetail(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.PhotoAnywhereController">
+            <summary>
+            随手拍
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.PhotoAnywhereController.GetList(DVS.Model.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.PhotoAnywhereController.Save(DVS.Model.Dtos.Cons.CreatePhotoAnywhereModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.PhotoAnywhereController.GetDetail(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.PhotoAnywhereController.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.PhotoAnywhereController.StatisticPhotoAnywhereByType(System.Int32)">
+            <summary>
+            随手拍统计
+            </summary>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.PhotoAnywhereController.StatisticPhotoAnywhereByTypeMonth(System.Int32)">
+            <summary>
+            随手拍办理情况
+            </summary>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Wechat.InfoPublicController">
+            <summary>
+            公开消息
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.InfoPublicController.GetList(System.Int32,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="type"></param>
+            <param name="keyword"></param>
+            <param name="startdate"></param>
+            <param name="enddate"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.InfoPublicController.DetailPublic(System.Int32)">
+            <summary>
+            详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController">
+            <summary>
+            农产品销售
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.#ctor(AutoMapper.IMapper,DVS.Application.Services.Cons.IProduceSaleService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.GetList(DVS.Model.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.Save(DVS.Models.Dtos.Cons.CreateProduceSaleModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.GetDetail(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.Delete(System.Int32)">
+            <summary>
+            删除
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.MyList(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            我发布的销售
+            </summary>
+            <param name="type"></param>
+            <param name="userid"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.GetDataByAreaIdList(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            所有销售信息
+            </summary>
+            <param name="areaId"></param>
+            <param name="page"></param>
+            <param name="limit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ServiceChannelController.GetList(DVS.Model.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ServiceChannelController.GetDetail(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ServiceGuideController.GetList(DVS.Model.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ServiceGuideController.GetDetail(System.Int32)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

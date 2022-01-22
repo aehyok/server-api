@@ -1,0 +1,13 @@
+**/bin
+**/Debug
+**/obj
+global.json
+**/logs
+/.vs/
+.vscode
+**/.pubxml
+**/.pubxml.user
+**/Properties
+**/appsettings.json
+**/appsettings.*.json
+/MediaTransformtor/MediaTransformtor.csproj.user

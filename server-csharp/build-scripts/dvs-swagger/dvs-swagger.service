@@ -1,0 +1,19 @@
+[Unit]
+Description=dvs-swagger
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# modify when deploy in prod env
+User=dvs
+Group=dvs
+
+Type=simple
+ExecStart=/usr/local/dotnet-sdk/dotnet /usr/local/sunlight/dvs/dvs-swagger/DVS.Swagger.dll
+WorkingDirectory=/usr/local/sunlight/dvs/dvs-swagger
+Restart=always
+RestartSec=1
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target

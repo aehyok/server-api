@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>6506c7f6-4119-4fdd-a90d-7f963d0d53e1</UserSecretsId>
+    <AssemblyName>DVS.SunFSAgent.Api</AssemblyName>
+    <RootNamespace>DVS.SunFSAgent.Api</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\DVS.sunfsagent.Api.xml</DocumentationFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove=".version" />
+    <None Remove="static\video.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="static\video.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Lychee.Core" Version="1.0.8" />
+    <PackageReference Include="Lychee.EntityFramework" Version="1.0.10" />
+    <PackageReference Include="Lychee.EntityFramework.Extensions" Version="1.0.1" />
+    <PackageReference Include="Lychee.EntityFramework.MySql" Version="1.0.9" />
+    <PackageReference Include="Lychee.Extension.Cache.Abstractions" Version="1.0.0" />
+    <PackageReference Include="Lychee.Extension.Cache.EasyCaching" Version="1.0.0" />
+    <PackageReference Include="Lychee.Extensions" Version="1.0.1" />
+    <PackageReference Include="Lychee.TypeFinder" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DVS.Application\DVS.Application.csproj" />
+    <ProjectReference Include="..\DVS.Common\DVS.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include=".version">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="static\video.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DVS.sunfsagent.Api.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>

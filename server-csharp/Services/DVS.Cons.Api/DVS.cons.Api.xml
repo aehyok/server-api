@@ -1,0 +1,746 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.Cons.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DVS.Cons.Api.Controllers.App.InfoPublicController">
+            <summary>
+            公开消息
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.InfoPublicController.#ctor(DVS.Application.Services.Cons.IInfoPublicService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.InfoPublicController.GetListAsync(DVS.Models.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.InfoPublicController.DetailPublicAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.App.PhotoAnywhereController">
+            <summary>
+            随手拍
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.GetList(DVS.Models.Dtos.Cons.Query.PhotoAnywhereListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.Save(DVS.Models.Dtos.Cons.CreatePhotoAnywhereModel)">
+            <summary>
+            添加修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.Delete(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.Reply(DVS.Models.Dtos.Cons.ReplyPhotoAnywhereModel)">
+            <summary>
+            随手拍回复
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.StatisticPhotoAnywhereByType(DVS.Models.Dtos.Cons.Query.PhotoAnywhereQueryModel)">
+            <summary>
+            随手拍统计（按事件类型统计数量）
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.StatisticPhotoAnywhereByTypeMonth(DVS.Models.Dtos.Cons.Query.PhotoAnywhereQueryModel)">
+            <summary>
+            随手拍办理情况（按月统计已处理和未处理数量）
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.StatisticPhotoAnywhereByStatus(DVS.Models.Dtos.Cons.Query.PhotoAnywhereQueryModel)">
+            <summary>
+            随手拍处理情况(统计已处理和未处理数量)
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.GetPhotoAnywhereType">
+            <summary>
+            获取随手拍事件类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.MyPhotoAnywhereCount">
+            <summary>
+            我发的随手拍数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.MyPhotoAnywhere(DVS.Models.Dtos.Cons.Query.PhotoAnywhereListQueryModel)">
+            <summary>
+            我发的随手拍
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.MyReplyPhotoAnywhereCount">
+            <summary>
+            我处理的随手拍数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.PhotoAnywhereController.MyReplyPhotoAnywhere(DVS.Models.Dtos.Cons.Query.PhotoAnywhereListQueryModel)">
+            <summary>
+            我处理的随手拍
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.App.ProduceSaleController">
+            <summary>
+            农产品销售
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.#ctor(AutoMapper.IMapper,DVS.Application.Services.Cons.IProduceSaleService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.GetList(DVS.Models.Dtos.Cons.Query.ProduceSaleListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.Save(DVS.Models.Dtos.Cons.CreateProduceSaleModel)">
+            <summary>
+            添加修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.Delete(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.MyList(DVS.Models.Dtos.Cons.Query.ProduceSaleListQueryModel)">
+            <summary>
+            我发布的销售
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.GetDataByAreaIdList(DVS.Models.Dtos.Cons.Query.ProduceSaleListQueryModel)">
+            <summary>
+            所有销售信息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.MyPublishCount">
+            <summary>
+            我发布的农产品数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.ProduceSaleController.GetPublisher(DVS.Models.Dtos.Village.Query.PostBody)">
+            <summary>
+            获取发布人
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.App.UserInfoController.GetUserInfoAsync">
+            <summary>
+            获取用户详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Console.InfoPublicController">
+            <summary>
+            公开消息
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.#ctor(DVS.Application.Services.Cons.IInfoPublicService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.GetThreethingsListAsync(DVS.Models.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.GetPartybuildingListAsync(DVS.Models.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.GetSpiritualcivilizationListAsync(DVS.Models.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.GetConveniencemessageListAsync(DVS.Models.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DeleteThreethingsAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除公开消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DeletePartybuildingAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除公开消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DeleteSpiritualcivilizationAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除公开消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DeleteConveniencemessageAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除公开消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.SaveThreethingsAsync(DVS.Core.Domains.Cons.ConsInfoPublic)">
+            <summary>
+            保存
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.SavePartybuildingAsync(DVS.Core.Domains.Cons.ConsInfoPublic)">
+            <summary>
+            保存
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.SaveSpiritualcivilizationAsync(DVS.Core.Domains.Cons.ConsInfoPublic)">
+            <summary>
+            保存
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.SaveConveniencemessageAsync(DVS.Core.Domains.Cons.ConsInfoPublic)">
+            <summary>
+            保存
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DetailThreethingsAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DetailPartybuildingAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DetailSpiritualcivilizationAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.InfoPublicController.DetailConveniencemessageAsync(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController">
+            <summary>
+            随手拍
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.#ctor(DVS.Application.Services.Cons.IPhotoAnywhereService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.GetList(DVS.Models.Dtos.Cons.Query.PhotoAnywhereListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.GetReplyList(DVS.Models.Dtos.Cons.Query.PhotoAnywhereListQueryModel)">
+            <summary>
+            获取已处理列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.Save(DVS.Models.Dtos.Cons.CreatePhotoAnywhereModel)">
+            <summary>
+            添加修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.DeleteAsync(DVS.Models.Dtos.Cons.Query.DeleteModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.StatisticPhotoAnywhereByType(DVS.Models.Dtos.Cons.Query.PhotoAnywhereQueryModel)">
+            <summary>
+            随手拍统计
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.StatisticPhotoAnywhereByTypeMonth(DVS.Models.Dtos.Cons.Query.PhotoAnywhereQueryModel)">
+            <summary>
+            随手拍办理情况
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.GetPhotoAnywhereType">
+            <summary>
+            获取随手拍事件类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.PhotoAnywhereController.Reply(DVS.Models.Dtos.Cons.ReplyPhotoAnywhereModel)">
+            <summary>
+            随手拍回复
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Console.ProduceSaleController">
+            <summary>
+            农产品销售
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.#ctor(DVS.Application.Services.Cons.IProduceSaleService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.GetProduceSaleListAsync(DVS.Models.Dtos.Cons.Query.ProduceSaleListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.Save(DVS.Models.Dtos.Cons.CreateProduceSaleModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.Delete(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ProduceSaleController.GetPublisher(DVS.Models.Dtos.Village.Query.PostBody)">
+            <summary>
+            获取发布人
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.GetList(DVS.Models.Dtos.Common.PagedListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.Save(DVS.Models.Dtos.Cons.CreateServiceChannelModel)">
+            <summary>
+            添加修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.AddAsync(DVS.Models.Dtos.Cons.CreateServiceChannelModel)">
+            <summary>
+            添加修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.EditAsync(DVS.Models.Dtos.Cons.CreateServiceChannelModel)">
+            <summary>
+            添加修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.GetQrCode(System.String)">
+            <summary>
+            取二维码
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceChannelController.Delete(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.GetList(DVS.Models.Dtos.Common.PagedListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.Save(DVS.Models.Dtos.Cons.CreateServiceGuideModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.AddAsync(DVS.Models.Dtos.Cons.CreateServiceGuideModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.EditAsync(DVS.Models.Dtos.Cons.CreateServiceGuideModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.ServiceGuideController.Delete(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Console.SystemController">
+            <summary>
+            基础接口
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.SystemController.#ctor(AutoMapper.IMapper,DVS.Application.Services.Village.IPopulationService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="popuService"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.SystemController.Version">
+            <summary>
+            获取服务的版本
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Console.SystemController.ImportData(DVS.Application.Services.Village.IHouseholdCodeService,System.String)">
+            <summary>
+            导入数据
+            </summary>
+            <param name="service"></param>
+            <param name="fileName">导入的JSON文件名称 XXXX.json</param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Wechat.InfoPublicController">
+            <summary>
+            公开消息
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.InfoPublicController.#ctor(DVS.Application.Services.Cons.IInfoPublicService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.InfoPublicController.GetList(DVS.Models.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            查询公开信息列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.InfoPublicController.GetListAsync(DVS.Models.Dtos.Cons.Query.ConsListQueryModel)">
+            <summary>
+            查询最新动态列表
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.InfoPublicController.DetailPublic(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            详情
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController">
+            <summary>
+            随手拍
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.#ctor(DVS.Application.Services.Cons.IPhotoAnywhereService)">
+            <summary>
+            
+            </summary>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.GetList(DVS.Models.Dtos.Cons.Query.PhotoAnywhereListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.Save(DVS.Models.Dtos.Cons.CreatePhotoAnywhereModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.Delete(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.StatisticPhotoAnywhereByType(DVS.Models.Dtos.Cons.Query.PhotoAnywhereQueryModel)">
+            <summary>
+            随手拍统计
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.StatisticPhotoAnywhereByTypeMonth(DVS.Models.Dtos.Cons.Query.PhotoAnywhereQueryModel)">
+            <summary>
+            随手拍办理情况
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.GetPhotoAnywhereType">
+            <summary>
+            获取随手拍事件类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.StatisticPhotoAnywhereByStatus(DVS.Models.Dtos.Cons.Query.PhotoAnywhereQueryModel)">
+            <summary>
+            随手拍处理情况
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.MyPhotoAnywhereCount">
+            <summary>
+            我发的随手拍数量
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.PhotoAnywhereController.MyPhotoAnywhere(DVS.Models.Dtos.Cons.Query.PhotoAnywhereListQueryModel)">
+            <summary>
+            我发的随手拍
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController">
+            <summary>
+            农产品销售
+            </summary>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.#ctor(AutoMapper.IMapper,DVS.Application.Services.Cons.IProduceSaleService)">
+            <summary>
+            
+            </summary>
+            <param name="mapper"></param>
+            <param name="service"></param>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.GetList(DVS.Models.Dtos.Cons.Query.ProduceSaleListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.Save(DVS.Models.Dtos.Cons.CreateProduceSaleModel)">
+            <summary>
+            添加修改
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.Delete(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            删除
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.MyList(DVS.Models.Dtos.Cons.Query.ProduceSaleListQueryModel)">
+            <summary>
+            我发布的销售
+            </summary>
+            <param name="model"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.GetDataByAreaIdList(DVS.Models.Dtos.Cons.Query.ProduceSaleListQueryModel)">
+            <summary>
+            所有销售信息
+            </summary>
+            <param name="model"></param>         
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ProduceSaleController.MyPublishCount">
+            <summary>
+            我发布的农产品数量
+            </summary>
+            <param ></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ServiceChannelController.GetList(DVS.Models.Dtos.Common.PagedListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ServiceChannelController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ServiceGuideController.GetList(DVS.Models.Dtos.Common.PagedListQueryModel)">
+            <summary>
+            获取列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.ServiceGuideController.GetDetail(DVS.Models.Dtos.Cons.Query.DetailQueryModel)">
+            <summary>
+            获取详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Cons.Api.Controllers.Wechat.UserInfoController.GetUserInfoAsync">
+            <summary>
+            获取用户详情
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

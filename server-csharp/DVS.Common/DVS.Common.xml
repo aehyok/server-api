@@ -1,0 +1,783 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.Common</name>
+    </assembly>
+    <members>
+        <member name="M:DVS.Common.FFMpeg.VideoTransform.GetVideoThumbnailAsync(DVS.Models.Models.MediaTransform.TransformTask)">
+            <summary>
+            获取视频的第一帧截图
+            </summary>
+            <param name="task"></param>
+        </member>
+        <member name="P:DVS.Common.Guideline.GuideLinePageModel.Total">
+            <summary>
+            数据总数
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.GuideLinePageModel.Page">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.GuideLinePageModel.Pages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.GuideLinePageModel.Limit">
+            <summary>
+            分页大小
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Guideline.MD_GuideLine">
+            <summary>
+            指标元数据定义 
+            
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.ID">
+            <summary>
+            指标ID
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.GuideLineName">
+            <summary>
+            指标名称
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.GroupName">
+            <summary>
+            指标所在的组名称
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.FatherID">
+            <summary>
+            父指标ID
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.DisplayOrder">
+            <summary>
+            指标显示顺序
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.Description">
+            <summary>
+            指标说明
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.Children">
+            <summary>
+            子指标集合
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.Parameters">
+            <summary>
+            指标查询参数集合
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.ResultGroups">
+            <summary>
+            指标查询结果分组集合
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLine.DetailDefines">
+            <summary>
+            详细信息链接
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Guideline.MD_GuideLineDetailDefine">
+            <summary>
+            指标详情元数据定义
+            
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailDefine.TargetFieldName">
+            <summary>
+            目标字段
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailDefine.QueryDetailType">
+            <summary>
+            查询类型
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailDefine.DetailMethodID">
+            <summary>
+            链接详细的方法或指标ID
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailDefine.DetailParameterMeta">
+            <summary>
+            链接详细的参数元数据定义
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailDefine.DetailLinkMeta">
+            <summary>
+            链接详细的链接定义
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Guideline.MD_GuideLineDetailParameter">
+            <summary>
+            指标详情参数定义
+            
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailParameter.Name">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailParameter.DataValue">
+            <summary>
+            值
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailParameter.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineDetailParameter.Title">
+            <summary>
+            显示名称
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Guideline.MD_GuideLineFieldGroup">
+            <summary>
+            指标字段组元数据定义
+            
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldGroup.Fields">
+            <summary>
+            字段组下包含的显示字段列表
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldGroup.GroupName">
+            <summary>
+            字段组名称
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldGroup.DisplayTitle">
+            <summary>
+            显示标题
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldGroup.TextAlign">
+            <summary>
+            字段对齐
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldGroup.DisplayOrder">
+            <summary>
+            显示顺序
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldGroup.CanHide">
+            <summary>
+            是否可隐藏
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldGroup.DefaultStatus">
+            <summary>
+            默认状态　　HIDE:隐藏　SHOW:显示
+            </summary>
+            
+        </member>
+        <member name="T:DVS.Common.Guideline.MD_GuideLineFieldName">
+            <summary>
+            指标字段名称元数据定义
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldName.CanHide">
+            <summary>
+            本字段是否可隐藏
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldName.DisplayFormat">
+            <summary>
+            显示格式
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldName.FieldName">
+            <summary>
+            字段名称
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldName.DisplayTitle">
+            <summary>
+            显示名称
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldName.DisplayOrder">
+            <summary>
+            显示顺序
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldName.DisplayWidth">
+            <summary>
+            显示宽度
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldName.TextAlign">
+            <summary>
+            是否居中
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineFieldName.GroupName">
+            <summary>
+            分组名称
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Guideline.MD_GuideLineGroup">
+            <summary>
+            指标组元数据定义
+            
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineGroup.SSDW">
+            [DataMember]
+             public MD_Nodes MD_Nodes { get; set; }
+        </member>
+        <member name="T:DVS.Common.Guideline.MD_GuideLineParameter">
+            <summary>
+            指标参数元数据定义
+            
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.SelectAllCode">
+            <summary>
+            全部的代码
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.CanSelectAll">
+            <summary>
+            是否可以选"全部"
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.IncludeChildren">
+            <summary>
+            当为代码表时,查询代码是否要求包含下级
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.RefTableName">
+            <summary>
+            代码表名称
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.DefaultValue">
+            <summary>
+            默认参数值
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.ParameterName">
+            <summary>
+            参数名称
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.DisplayTitle">
+            <summary>
+            显示名称
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.InputWidth">
+            <summary>
+            录入框长度
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.DisplayOrder">
+            <summary>
+            参数显示顺序
+            </summary>
+            
+        </member>
+        <member name="P:DVS.Common.Guideline.MD_GuideLineParameter.ParameterType">
+            <summary>
+            参数类型
+            </summary>
+            
+        </member>
+        <member name="T:DVS.Common.Guideline.QueryGuidelineModel">
+            <summary>
+            指标查询模型
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.QueryGuidelineModel.GuideLineId">
+            <summary>
+            指标ID
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.QueryGuidelineModel.Param">
+            <summary>
+            参数键值对
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.QueryGuidelineModel.FilterWord">
+            <summary>
+            查询关键字
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Guideline.QueryGuidelinePageModel">
+            <summary>
+            指标分页查询
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.QueryGuidelinePageModel.PageIndex">
+            <summary>
+            当前页 默认为1
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.QueryGuidelinePageModel.PageSize">
+            <summary>
+            每页记录数 默认为15
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.QueryGuidelinePageModel.SortBy">
+            <summary>
+            排序字段
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Guideline.QueryGuidelinePageModel.SortDirection">
+            <summary>
+            排序方向 ASC  DESC
+            </summary>
+        </member>
+        <member name="P:DVS.Common.ModelDtos.PagedResultModel`1.Total">
+            <summary>
+            数据总数
+            </summary>
+        </member>
+        <member name="P:DVS.Common.ModelDtos.PagedResultModel`1.Page">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:DVS.Common.ModelDtos.PagedResultModel`1.Pages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:DVS.Common.ModelDtos.PagedResultModel`1.Limit">
+            <summary>
+            分页大小
+            </summary>
+        </member>
+        <member name="P:DVS.Common.ModelDtos.PagedResultIPSModel`1.Total">
+            <summary>
+            数据总数
+            </summary>
+        </member>
+        <member name="P:DVS.Common.ModelDtos.PagedResultIPSModel`1.Page">
+            <summary>
+            当前页
+            </summary>
+        </member>
+        <member name="P:DVS.Common.ModelDtos.PagedResultIPSModel`1.Pages">
+            <summary>
+            总页数
+            </summary>
+        </member>
+        <member name="P:DVS.Common.ModelDtos.PagedResultIPSModel`1.Limit">
+            <summary>
+            分页大小
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Models.DvsEntityBase">
+            <summary>
+            实体基类
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.DvsEntityBase.Id">
+            <summary>
+            主键
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.DvsEntityBase.CreatedAt">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.DvsEntityBase.CreatedBy">
+            <summary>
+            创建人id
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.DvsEntityBase.UpdatedAt">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.DvsEntityBase.UpdatedBy">
+            <summary>
+            修改人id
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.DvsEntityBase.IsDeleted">
+            <summary>
+            是否删除
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Models.IdCardInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.IdCardInfo.Sex">
+            <summary>
+            性别 1男2女
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.IdCardInfo.Birthday">
+            <summary>
+            出生日期
+            </summary>
+        </member>
+        <member name="T:DVS.Common.Models.LoginUser">
+            <summary>
+            登录用户的信息
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.Account">
+            <summary>
+            用户账号
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.UserId">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.HouseholdId">
+            <summary>
+            户码Id
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.NickName">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.Mobile">
+            <summary>
+            联系方式
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.RegisterAddress">
+            <summary>
+            户籍地详细地址
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.LiveAddress">
+            <summary>
+            现居住地详细地址
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.Status">
+            <summary>
+            1 启用 0停用
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.IsHouseholder">
+            <summary>
+            是否是户主，1是，0否
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.DepartmentIds">
+            <summary>
+            部门id
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.RoleIds">
+            <summary>
+            角色id
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.AreaName">
+            <summary>
+            区域名称
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.PopulationId">
+            <summary>
+            户籍Id
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.DataAcces">
+            <summary>
+            数据处理权限 all 全部 group 本部门 self 本人
+            </summary>
+        </member>
+        <member name="P:DVS.Common.Models.LoginUser.IsGrid">
+            <summary>
+            0非网格员 1网格员，2网格长
+            </summary>
+        </member>
+        <member name="T:DVS.Common.MQ.RabbitMQSubscriber">
+            <summary>
+            订阅的消费者都会接收到消息
+            </summary>
+        </member>
+        <member name="T:DVS.Common.MQ.RabbitMQWorker">
+            <summary>
+            每个消息只被一个消费者消费
+            </summary>
+        </member>
+        <member name="M:DVS.Common.SO.RSA.RSAEncrypt(System.String,System.String)">
+            <summary>
+            RSA使用公钥对数据加密
+            </summary>
+            <param name="publickey"></param>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.SO.RSA.RSAPublicKey(System.String)">
+            <summary>    
+            RSA公钥pem-->XML格式转换， 
+            </summary>    
+            <param name="publicKey">pem公钥</param>    
+            <returns></returns>    
+        </member>
+        <member name="M:DVS.Common.SO.BasicSO.Encrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="plaiText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.SO.BasicSO.Decrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Common.ExcelExportHelper">
+            <summary>
+            Excel导出帮助类
+            </summary>
+        </member>
+        <member name="M:DVS.Common.ExcelExportHelper.ListToDataTable``1(System.Collections.Generic.List{``0})">
+            <summary>
+            List转DataTable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.ExcelExportHelper.ListToDataTable``1(System.Collections.Generic.List{``0},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            List转DataTable
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.ExcelExportHelper.ExportExcel(System.Data.DataTable,System.String[],System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            导出Excel
+            </summary>
+            <param name="dataTable">数据源</param>
+            <param name="heading">工作簿Worksheet</param>
+            <param name="showSrNo">//是否显示行编号</param>
+            <param name="columnsToTake">要导出的列</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.ExcelExportHelper.ExportExcel``1(System.Collections.Generic.List{``0},System.String[],System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)">
+            <summary>
+            导出Excel
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <param name="headings"></param>
+            <param name="isShowSlNo"></param>
+            <param name="columnsToTake"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Common.Utils">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DVS.Common.Utils.GetTaskExecuteLockAsync(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="taskName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.ValidIdCard(System.String)">
+            <summary>
+            身份证号码处理
+            </summary>
+            <param name="IdCard"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.GetRandomString(System.Int32,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String)">
+            <summary>
+            生成随机字符串 
+            </summary>
+            <param name="length">目标字符串的长度</param>
+            <param name="useNum">是否包含数字，1=包含，默认为包含</param>
+            <param name="useLow">是否包含小写字母，1=包含，默认为包含</param>
+            <param name="useUpp">是否包含大写字母，1=包含，默认为包含</param>
+            <param name="useSpe">是否包含特殊字符，1=包含，默认为不包含</param>
+            <param name="custom">要包含的自定义字符，直接输入要包含的字符列表</param>
+            <returns>指定长度的随机字符串</returns>
+        </member>
+        <member name="M:DVS.Common.Utils.Decrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="ciphertext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.Encrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="plain"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.MD5(System.String)">
+            <summary>
+            md5加密
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.ImportExcel(System.IO.Stream,System.Int32,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="fileStream"></param>
+            <param name="rowIndex"></param>
+            <param name="colCount"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.ImportExcel(System.String,System.Int32,System.Int32)">
+            <summary>
+            excel导入
+            </summary>
+            <param name="filePath">excel文件路径</param>
+            <param name="rowIndex">起始行数</param>
+            <param name="colCount">列数</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.DESEncrypt(System.String)">
+            <summary>
+            加密
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.DESDecrypt(System.String)">
+            <summary>
+            解密
+            </summary>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.GetQRCodeImage(System.String)">
+            <summary>
+            URL生成二维码
+            </summary>
+            <param name="url"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.SplitAddress(System.String)">
+            <summary>
+            拆分地址
+            </summary>
+            <param name="addressString"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.GetMD5HashFromFile(System.String)">
+            <summary>
+            获取文件MD5值
+            </summary>
+            <param name="filePath">文件绝对路径</param>
+            <returns>MD5值</returns>
+        </member>
+        <member name="M:DVS.Common.Utils.GetTimeStamp">
+            <summary>
+            获取时间戳
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Common.Utils.FilterKeyword(System.String)">
+            <summary>
+            过滤特殊字符
+            </summary>
+            <param name="keyword"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Common.ServiceReflection">
+            <summary>Holder for reflection information generated from Protos/service.proto</summary>
+        </member>
+        <member name="P:DVS.Common.ServiceReflection.Descriptor">
+            <summary>File descriptor for Protos/service.proto</summary>
+        </member>
+        <member name="F:DVS.Common.Request.ParametersFieldNumber">
+            <summary>Field number for the "parameters" field.</summary>
+        </member>
+        <member name="F:DVS.Common.Reply.DataFieldNumber">
+            <summary>Field number for the "data" field.</summary>
+        </member>
+        <member name="P:DVS.Common.SunCenter.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:DVS.Common.SunCenter.SunCenterBase">
+            <summary>Base class for server-side implementations of SunCenter</summary>
+        </member>
+        <member name="T:DVS.Common.SunCenter.SunCenterClient">
+            <summary>Client for SunCenter</summary>
+        </member>
+        <member name="M:DVS.Common.SunCenter.SunCenterClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for SunCenter</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:DVS.Common.SunCenter.SunCenterClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for SunCenter that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:DVS.Common.SunCenter.SunCenterClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:DVS.Common.SunCenter.SunCenterClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:DVS.Common.SunCenter.SunCenterClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+        <member name="M:DVS.Common.SunCenter.BindService(DVS.Common.SunCenter.SunCenterBase)">
+            <summary>Creates service definition that can be registered with a server</summary>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+        <member name="M:DVS.Common.SunCenter.BindService(Grpc.Core.ServiceBinderBase,DVS.Common.SunCenter.SunCenterBase)">
+            <summary>Register service method with a service binder with or without implementation. Useful when customizing the  service binding logic.
+            Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+            <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+            <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+        </member>
+    </members>
+</doc>

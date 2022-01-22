@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Authors>Hubert</Authors>
+    <Company>iCoding.me</Company>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Product>Lychee.Core</Product>
+    <Description>Lychee 快速开发框架核心库</Description>
+    <PackageId>Lychee.Core</PackageId>
+    <PackageReleaseNotes>统一核心库版本</PackageReleaseNotes>
+    <Version>1.0.8</Version>
+    <PackageProjectUrl>https://www.icoding.me/project/lychee</PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.PlatformAbstractions" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Lychee.Extensions\Lychee.Extensions.csproj" />
+    <ProjectReference Include="..\Lychee.TypeFinder\Lychee.TypeFinder.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,20 @@
+[Unit]
+Description=dvs-sunfsagent
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+# modify when deploy in prod env
+User=dvs
+Group=dvs
+
+Type=simple
+ExecStart=/usr/local/dotnet-sdk/dotnet /usr/local/sunlight/dvs/dvs-sunfsagent/DVS.SunFSAgent.Api.dll
+WorkingDirectory=/usr/local/sunlight/dvs/dvs-sunfsagent
+
+Restart=always
+RestartSec=1
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target

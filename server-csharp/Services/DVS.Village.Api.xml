@@ -1,0 +1,491 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DVS.Village.Api</name>
+    </assembly>
+    <members>
+        <member name="T:DVS.Village.Api.Controllers.AppController">
+            <summary>
+            APP相关接口
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetHouseNameList(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32)">
+            <summary>
+            村门牌名列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetHouseholdCodeList(DVS.Application.Services.Village.IHouseholdCodeService,DVS.Models.Dtos.Village.Query.PostBody)">
+            <summary>
+            获取户码列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetHouseholdCodeDetail(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32)">
+            <summary>
+            获取户码详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.SetHouseholdImage(DVS.Application.Services.Village.IHouseholdCodeService,DVS.Models.Dtos.Village.Query.SetHouseholdImageBody)">
+            <summary>
+            上传住宅（户码）图片
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetPopulationList(DVS.Application.Services.Village.IPopulationService,DVS.Models.Dtos.Village.Query.PopulationListBody)">
+            <summary>
+            户籍人口列表
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetPopulationDetail(DVS.Application.Services.Village.IPopulationService,System.Int32,System.String)">
+            <summary>
+            户籍人口详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.SavePopulation(DVS.Application.Services.Village.IPopulationService,DVS.Core.Domains.Village.VillagePopulation)">
+            <summary>
+            添加编辑户籍人口
+            </summary>
+            <param name="villagePopulation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.SaveIncome(DVS.Application.Services.Village.IIncomeService,DVS.Models.Dtos.Village.Query.SaveIncomeBody)">
+            <summary>
+            添加编辑收入来源
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetIncomeDetail(DVS.Application.Services.Village.IIncomeService,System.Int32,System.Int32)">
+            <summary>
+            收入来源详情
+            </summary>
+            <param name="householdId">户码Id</param>
+            <param name="year">年度</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetEpidemicPopulationList(DVS.Application.Services.Village.IEpidemicService,System.Int32)">
+            <summary>
+            疫情防控信息
+            </summary>
+            <param name="householdId">户码Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetEpidemicInfoList(DVS.Application.Services.Village.IEpidemicService,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            疫情防控历史
+            </summary>
+            <param name="householdId">户码Id</param>
+            <param name="year">年度</param>
+            <param name="populationId">人口Id 可选</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.SaveEpidemicInfo(DVS.Application.Services.Village.IEpidemicService,DVS.Core.Domains.Village.VillageEpidemic)">
+            <summary>
+            登记疫情信息
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetWorkInfoList(DVS.Application.Services.Village.IWorkService,System.Int32,System.Int32)">
+            <summary>
+            务工人员详情信息
+            </summary>
+            <param name="service"></param>
+            <param name="householdId"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.SaveWorkInfo(DVS.Application.Services.Village.IWorkService,DVS.Core.Domains.Village.VillageWork)">
+            <summary>
+            新增外出务工信息
+            </summary>
+            <param name="service"></param>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetUserAuthList(DVS.Application.Services.Village.IUserAuthRecordService,DVS.Models.Dtos.Village.Query.PageUserAuthBody)">
+            <summary>
+            村民认证申请列表
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetUserAuthDetail(DVS.Application.Services.Village.IUserAuthRecordService,System.Int32)">
+            <summary>
+            村民认证申请详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetHouseNumberList(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32,System.String)">
+            <summary>
+            村门牌号列表
+            </summary>
+            <param name="areaId">行政区域Id</param>
+            <param name="houseName">门牌名</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.AuditUserAuth(DVS.Application.Services.Village.IUserAuthRecordService,DVS.Models.Dtos.Village.AuditUserAuthDto)">
+            <summary>
+            审核村民认证
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.AppController.GetBasicDictionaryList(DVS.Application.Services.Common.IBasicDictionaryService,System.Int32)">
+            <summary>
+            获取字典列表
+            </summary>
+            <param name="code">类型code</param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.CommonController">
+            <summary>
+            公共接口
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.CommonController.GetBasicDictionaryList(DVS.Application.Services.Common.IBasicDictionaryService,System.Int32)">
+            <summary>
+            获取字典列表
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.EpidemicController">
+            <summary>
+            疫情防控管理
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.EpidemicController.GetEpidemicInfoList(DVS.Application.Services.Village.IEpidemicService,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            疫情防控人员详情
+            </summary>
+            <param name="householdId">户码Id</param>
+            <param name="year">年度</param>
+            <param name="populationId">人口Id 可选</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.EpidemicController.GetEpidemicList(DVS.Application.Services.Village.IEpidemicService,DVS.Models.Dtos.Village.Query.PagePostBody)">
+            <summary>
+            疫情防控管理
+            </summary>
+            <param name="service"></param>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.HouseholdCodeController">
+            <summary>
+            户码管理
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.HouseholdCodeController.GetHouseholdCodeList(DVS.Application.Services.Village.IHouseholdCodeService,DVS.Models.Dtos.Village.Query.PostBody)">
+            <summary>
+            获取户码列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.HouseholdCodeController.GetHouseholdCodeDetail(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32)">
+            <summary>
+            获取户码详情
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.HouseholdCodeController.SaveHouseholdCode(DVS.Application.Services.Village.IHouseholdCodeService,System.Object)">
+            <summary>
+            增加编辑户码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.HouseholdCodeController.DownloadHouseholdCode(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            请求下载户码
+            </summary>
+            <param name="service"></param>
+            <param name="areaCode">区域编码</param>
+            <param name="ids">户码的ids</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.HouseholdCodeController.GetHouseholdCodeGenStatus(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32)">
+            <summary>
+            查询户码生产状态
+            </summary>
+            <param name="service"></param>
+            <param name="taskId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.HouseholdCodeController.GetHouseholdGenTaskAsync(DVS.Application.Services.Village.IHouseholdCodeService)">
+            <summary>
+            获取需要生成户码的任务
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.HouseholdCodeController.DownloadSingleHouseholdCodeSync(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32)">
+            <summary>
+            下载单个户码
+            </summary>
+            <param name="service"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.HouseholdCodeController.DownloadSingleQrCodeSync(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32)">
+            <summary>
+            下载户码的二维码
+            </summary>
+            <param name="service"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.IncomeController">
+            <summary>
+            收入来源管理
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.IncomeController.GetIncomeList(DVS.Models.Dtos.Village.Query.PagePostBody)">
+            <summary>
+            收入来源管理
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.IncomeController.GetIncomeDetail(System.Int32,System.Int32)">
+            <summary>
+            收入来源详情
+            </summary>
+            <param name="householdId">户码Id</param>
+            <param name="year">年度</param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.PopulationController">
+            <summary>
+            户籍人口管理
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.PopulationController.GetPopulationList(DVS.Application.Services.Village.IPopulationService,DVS.Models.Dtos.Village.Query.PopulationListBody)">
+            <summary>
+            户籍人口列表
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.PopulationController.GetPopulationDetail(DVS.Application.Services.Village.IPopulationService,System.Int32,System.String)">
+            <summary>
+            户籍人口详情
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.PopulationController.SavePopulation(DVS.Application.Services.Village.IPopulationService,DVS.Core.Domains.Village.VillagePopulation)">
+            <summary>
+            添加编辑户籍人口
+            </summary>
+            <param name="villagePopulation"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.PopulationController.SetHouseholdRelationship(DVS.Application.Services.Village.IPopulationService,DVS.Models.Dtos.Village.Query.SetRelationshipBody)">
+            <summary>
+            设置与户主管理
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.PopulationController.SetFromHousehold(DVS.Application.Services.Village.IPopulationService,DVS.Models.Dtos.Village.Query.SetFromHouseholdBody)">
+            <summary>
+            移除，加入户码
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.QRCodeController">
+            <summary>
+            户码管理
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.QRCodeController.DownloadHouseholdQRCode">
+            <summary>
+            请求下载二维码
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.StatisticsController">
+            <summary>
+            后台首页乡村治理相关统计
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.StatisticsController.GetPopuSexPer(System.Int32)">
+            <summary>
+            人口概况 男女比例 未实现
+            </summary>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.StatisticsController.GetPopulationTypeBar(System.Int32)">
+            <summary>
+            人口概况 人口类型 未实现
+            </summary>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.StatisticsController.GetYearIncome(DVS.Common.Services.IServiceBase{DVS.Core.Domains.Village.VillageIncome},System.Int32)">
+            <summary>
+            农村居民平均年收入 未实现
+            </summary>
+            <param name="service"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.StatisticsController.GetVillageHonor(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32)">
+            <summary>
+            乡村治理荣誉 未实现
+            </summary>
+            <param name="service"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.StatisticsController.GetOutWorkInfo(DVS.Common.Services.IServiceBase{DVS.Core.Domains.Village.VillageWork},System.Int32)">
+            <summary>
+            外出务工情况 未实现
+            </summary>
+            <param name="service"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.StatisticsController.GetVillagePartakeSex(DVS.Application.Services.Village.IPopulationService,System.Int32)">
+            <summary>
+            乡村治理居民参与情况 男女 未实现
+            </summary>
+            <param name="service"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.StatisticsController.GetVillagePartakeAge(DVS.Application.Services.Village.IPopulationService,System.Int32)">
+            <summary>
+            乡村治理居民参与情况 年龄段 未实现
+            </summary>
+            <param name="service"></param>
+            <param name="areaId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.WeChatController">
+            <summary>
+            公众号相关接口
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetHouseholdCodeDetail(DVS.Application.Services.Village.IHouseholdCodeService,System.Int32)">
+            <summary>
+            获取户码详情！
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetPopulationList(DVS.Application.Services.Village.IPopulationService,DVS.Models.Dtos.Village.Query.PopulationListBody)">
+            <summary>
+            户籍人口列表！
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetPopulationDetail(DVS.Application.Services.Village.IPopulationService,System.Int32,System.String)">
+            <summary>
+            户籍人口详情！
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetIncomeDetail(DVS.Application.Services.Village.IIncomeService,System.Int32,System.Int32)">
+            <summary>
+            收入来源详情！
+            </summary>
+            <param name="householdId">户码Id</param>
+            <param name="year">年度</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetEpidemicPopulationList(DVS.Application.Services.Village.IEpidemicService,System.Int32)">
+            <summary>
+            疫情防控信息！
+            </summary>
+            <param name="householdId">户码Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetEpidemicInfoList(DVS.Application.Services.Village.IEpidemicService,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            疫情防控历史！
+            </summary>
+            <param name="householdId">户码Id</param>
+            <param name="year">年度</param>
+            <param name="populationId">人口Id 可选</param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetWorkInfoList(DVS.Application.Services.Village.IWorkService,System.Int32,System.Int32)">
+            <summary>
+            务工人员详情信息！
+            </summary>
+            <param name="service"></param>
+            <param name="householdId"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.SaveWorkInfo(DVS.Application.Services.Village.IWorkService,DVS.Core.Domains.Village.VillageWork)">
+            <summary>
+            新增外出务工信息
+            </summary>
+            <param name="service"></param>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetBasicDictionaryList(DVS.Application.Services.Common.IBasicDictionaryService,System.Int32)">
+            <summary>
+            获取字典列表
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.GetUserAuthStatus(DVS.Application.Services.Common.IBasicUserService,System.String)">
+            <summary>
+            获取用户认证状态
+            </summary>
+            <param name="service"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.SendMobileCode(System.Object)">
+            <summary>
+            发送短信
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WeChatController.ApplyUserAuth(DVS.Application.Services.Village.IUserAuthRecordService,DVS.Models.Dtos.Village.ApplyUserAuthDto)">
+            <summary>
+            用户申请村民认证
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DVS.Village.Api.Controllers.WorkController">
+            <summary>
+            外出务工管理
+            </summary>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WorkController.GetWorkList(DVS.Application.Services.Village.IWorkService,DVS.Models.Dtos.Village.Query.PagePostBody)">
+            <summary>
+            外出务工管理列表
+            </summary>
+            <param name="body"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DVS.Village.Api.Controllers.WorkController.GetWorkInfoList(DVS.Application.Services.Village.IWorkService,System.Int32,System.Int32)">
+            <summary>
+            务工人员详情信息
+            </summary>
+            <param name="service"></param>
+            <param name="householdId"></param>
+            <param name="year"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

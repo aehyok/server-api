@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>.\DVS.gis.Api.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\GISPlotController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Lychee.Core" Version="1.0.8" />
+    <PackageReference Include="Lychee.EntityFramework" Version="1.0.10" />
+    <PackageReference Include="Lychee.EntityFramework.Extensions" Version="1.0.1" />
+    <PackageReference Include="Lychee.EntityFramework.MySql" Version="1.0.9" />
+    <PackageReference Include="Lychee.Extensions" Version="1.0.1" />
+    <PackageReference Include="Lychee.TypeFinder" Version="1.0.0" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="4.1.2" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\DVS.Application\DVS.Application.csproj" />
+    <ProjectReference Include="..\..\DVS.Common\DVS.Common.csproj" />
+    <ProjectReference Include="..\..\DVS.Core\DVS.Core.csproj" />
+    <ProjectReference Include="..\..\DVS.Models\DVS.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="logs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="DVS.gis.Api.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>
